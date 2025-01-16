@@ -32,9 +32,6 @@ use bc::Outpoint;
     serde(crate = "serde_crate", rename_all = "camelCase")
 )]
 pub enum VerifyError<E: Error> {
-    /// seals provided for a batch verification have inconsistent close method.
-    InconsistentCloseMethod,
-
     /// the provided witness transaction does not closes seal {0}.
     WitnessNotClosingSeal(Outpoint),
 

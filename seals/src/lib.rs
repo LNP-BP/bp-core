@@ -48,8 +48,3 @@ pub mod txout;
 mod secret;
 
 pub use secret::SecretSeal;
-
-/// Method for closing BP single-use-seals.
-pub trait SealCloseMethod: dbc::DbcMethod {}
-
-impl SealCloseMethod for dbc::Method {}

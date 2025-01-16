@@ -1,5 +1,5 @@
 {-
-  Id: stl:VhPW19SH-c5lzr1y-TLIsx8z-Z5nB!$Q-IgwrAQA-OqXLwUg#austin-story-retro
+  Id: stl:IXCrofWg-Kg2!RIk-Hzlc5GO-7tH2hNB-YeBTdmN-$HZ0tPw#symbol-tropic-grand
   Name: BPCore
   Version: 0.1.0
   Description: Bitcoin client-side-validation library
@@ -52,31 +52,21 @@ data AnchorMerkleTreeOpretProof : mpcProof CommitVerify.MerkleTree, dbcProof Opr
 @mnemonic(europe-mister-imitate)
 data AnchorMerkleTreeTapretProof : mpcProof CommitVerify.MerkleTree, dbcProof TapretProof
 
-@mnemonic(report-process-stuart)
-data BlindSealTxPtr    : method Method
-                       , txid TxPtr
+@mnemonic(metro-mars-canada)
+data BlindSealTxPtr    : txid TxPtr
                        , vout Bitcoin.Vout
                        , blinding U64
 
-@mnemonic(baby-region-proxy)
-data BlindSealTxid     : method Method
-                       , txid Bitcoin.Txid
+@mnemonic(halt-crash-valid)
+data BlindSealTxid     : txid Bitcoin.Txid
                        , vout Bitcoin.Vout
                        , blinding U64
 
-@mnemonic(meaning-extra-sherman)
-data ExplicitSealTxPtr : method Method
-                       , txid TxPtr
-                       , vout Bitcoin.Vout
+@mnemonic(velvet-neptune-bazooka)
+data ExplicitSealTxPtr : txid TxPtr, vout Bitcoin.Vout
 
-@mnemonic(june-total-denver)
-data ExplicitSealTxid  : method Method
-                       , txid Bitcoin.Txid
-                       , vout Bitcoin.Vout
-
-@mnemonic(bali-boris-plasma)
-data Method            : opretFirst | tapretFirst
-
+@mnemonic(chicago-europe-phantom)
+data ExplicitSealTxid  : txid Bitcoin.Txid, vout Bitcoin.Vout
 
 @mnemonic(good-village-flex)
 data OpretProof        : ()

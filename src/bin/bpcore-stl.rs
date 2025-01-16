@@ -26,7 +26,7 @@ use bc::stl::{bp_consensus_stl, bp_tx_stl};
 use bp::stl::bp_core_stl;
 use commit_verify::stl::commit_verify_stl;
 use commit_verify::CommitmentLayout;
-use seals::txout::{ChainBlindSeal, CloseMethod, SingleBlindSeal};
+use seals::txout::{ChainBlindSeal, SingleBlindSeal};
 use strict_encoding::libname;
 use strict_types::stl::std_stl;
 use strict_types::{parse_args, SystemBuilder};
@@ -113,9 +113,9 @@ Seals vesper lexicon=types+commitments
 "
     )
     .unwrap();
-    let layout = SingleBlindSeal::<CloseMethod>::commitment_layout();
+    let layout = SingleBlindSeal::commitment_layout();
     writeln!(file, "{layout}").unwrap();
-    let layout = ChainBlindSeal::<CloseMethod>::commitment_layout();
+    let layout = ChainBlindSeal::commitment_layout();
     writeln!(file, "{layout}").unwrap();
     let tt = sys.type_tree("BPCore.BlindSealTxid").unwrap();
     writeln!(file, "{tt}").unwrap();

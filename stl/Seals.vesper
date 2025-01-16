@@ -14,13 +14,11 @@ SecretSeal commitment hasher=SHA256 tagged=urn:lnp-bp:seals:secret#2024-02-03
   BlindSealTxPtr serialized
 
 BlindSealTxid rec
-  method enum Method opretFirst=0 tapretFirst=1
   txid bytes len=32 aka=Txid
   vout is U32 aka=Vout
   blinding is U64
 
 BlindSealTxPtr rec
-  method enum Method opretFirst=0 tapretFirst=1
   txid union TxPtr
     witnessTx is Unit tag=0
     txid bytes len=32 wrapped aka=Txid tag=1
